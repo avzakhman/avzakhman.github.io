@@ -127,8 +127,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
     //русский/английский язык
 
     const langButton = document.querySelectorAll('.header__lang');
-
-    let langState = false;
+    let langState = true;
     
     langButton.forEach((button)=>{button.addEventListener('click', ()=> {
         langState = !langState;

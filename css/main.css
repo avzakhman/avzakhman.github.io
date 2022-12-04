@@ -885,8 +885,9 @@ span.mobile-lang {
   color: #000000;
 }
 .slide-block__text p {
-  font-size: 24px;
-  line-height: 29px;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -976,8 +977,8 @@ span.mobile-lang {
 }
 @media (max-width: 1024px) {
   .slide-block__text {
-    width: 445px;
-    height: 125px;
+    width: 485px;
+    height: 155px;
   }
   .slide-block__text h2 {
     font-size: 24px;
@@ -1029,6 +1030,15 @@ span.mobile-lang {
 @media (max-width: 496px) {
   .slide-block__text {
     width: 320px;
+    height: 165px;
+  }
+  .slide-block__text h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .slide-block__text p {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 @media (max-width: 386px) {

@@ -1,12 +1,8 @@
-// document.querySelector('').addEventListener('click', ()=> { changeMain();}); 
-
-console.log('kek');
 
 let isactive = false;
-const fufa = document.querySelectorAll('.activate-form');
-fufa.forEach((button)=> {
+const activateform = document.querySelectorAll('.activate-form');
+activateform.forEach((button)=> {
     button.addEventListener('click', ()=> { 
-        console.log('kek');
         isactive = true; 
         activateWindow();
     });
@@ -14,12 +10,12 @@ fufa.forEach((button)=> {
 
 const activateWindow = () => {
     if (isactive == true){
-        kekk = document.querySelector('.formmenu');
-        kekk.classList.remove('formmenu_hidden');
+        formmenu = document.querySelector('.formmenu');
+        formmenu.classList.remove('formmenu_hidden');
         window.addEventListener('click', (e)=> {
             console.log(e.target.className);
             if (e.target.className === 'darker-backgrnd') {
-                kekk.classList.add('formmenu_hidden');
+                formmenu.classList.add('formmenu_hidden');
                 isactive = false;
             }
         });
@@ -37,19 +33,6 @@ const changeMain = () => {
 const indicateError = () => {
     document.querySelector('.formmenu').classList.add('formmenu_error');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 $('#form-submit').click(function (e) {
@@ -117,23 +100,3 @@ const changeSlide = function () {
         }
     });    
 }
-
-
-
-
-    // var $window = $(window)
-    //   , $card = $('.comparisons__collage')
-    //   , toggleSlick;
-  
-    // toggleSlick = function () {
-    //   if ($window.width() < 576) {
-    //     $card.slick({
-    //         infinite: true
-    //     });
-    //   } else {
-    //     $card.unslick();
-    //   }
-    // }
-  
-    // $window.resize(toggleSlick);
-    // toggleSlick();

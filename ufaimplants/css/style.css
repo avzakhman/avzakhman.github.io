@@ -63,14 +63,7 @@
     border-radius: 10px;
   }
   .button-inside span {
-    font-size: 24px;
-  }
-  .button:active {
-    margin-top: 5px;
-    height: 49px;
-  }
-  .button:active .button-inside {
-    height: 49px;
+    font-size: 18px;
   }
 }
 @-webkit-keyframes flareAnimation {
@@ -233,6 +226,7 @@
     font-size: 16px;
     line-height: 16px;
     width: 300px;
+    font-weight: 400;
     margin-left: 0px;
     margin-bottom: 340px;
   }
@@ -354,33 +348,28 @@
   .comparisons .slider-controls {
     display: flex;
     justify-content: space-between;
-    width: 290px;
-    padding: 0 20px;
-    margin-bottom: 20px;
+    width: 220px;
+    padding: 0px;
+    margin-bottom: 40px;
     position: relative;
     height: 40px;
   }
-  .comparisons .slider-controls button {
-    display: block;
-    top: 0;
-    left: 0;
-    height: 40px;
-    max-width: 40px;
-    margin-top: 0;
-    position: relative;
-    padding: 0;
-    border-radius: 100%;
-    border: 0;
-    background: #5ccebb;
-    font-size: 16px;
+  .comparisons .slider-controls .button {
+    width: 54px;
+    height: 54px;
+  }
+  .comparisons .slider-controls .button-inside {
+    width: 54px;
+    height: 49px;
+    padding-top: 2px;
+    padding-right: 3px;
+  }
+  .comparisons .slider-controls .button span {
     color: white;
-    width: 100%;
   }
-  .comparisons .slider-controls button:hover {
-    background: #53baa9;
-  }
-  .comparisons .slider-controls button:active {
-    background: #4dad9d;
+  .comparisons .slider-controls .next .button-inside {
+    padding-right: 0;
+    padding-left: 2px;
   }
 }
 aside.formmenu {

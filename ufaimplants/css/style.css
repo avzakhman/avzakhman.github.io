@@ -361,11 +361,12 @@
   .comparisons .slider-controls .button-inside {
     width: 54px;
     height: 49px;
-    padding-top: 2px;
+    padding-top: 6px;
     padding-right: 3px;
   }
-  .comparisons .slider-controls .button span {
-    color: white;
+  .comparisons .slider-controls .button span svg {
+    width: 15px;
+    height: 15px;
   }
   .comparisons .slider-controls .next .button-inside {
     padding-right: 0;
